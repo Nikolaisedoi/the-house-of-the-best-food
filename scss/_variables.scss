@@ -1,0 +1,25 @@
+// переменные цвет
+$btn-color: #ff7400;
+$light-color: #fff;
+$maim-text-color:#D67E35;
+$grey-color:#C4C4C4;
+//переменные шрифт
+$os: Open Sans;
+
+
+
+//миксины
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+@mixin tinos-400{
+  font-family: Tinos;
+  font-style: normal;
+  font-weight: normal;
+}
+@mixin os-400 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+}

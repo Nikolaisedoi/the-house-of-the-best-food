@@ -1,0 +1,52 @@
+// // переменные
+// $btn-color: #ff7400;
+// $light-color: #fff;
+// $os: Open Sans;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Tinos", serif;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  color: inherit;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+// font-family: "Cookie", cursive;
+.button__orange {
+  background-color: $btn-color;
+  font-family: $os;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: $light-color;
+  padding: 14px 18px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 44;
+}

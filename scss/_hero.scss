@@ -1,0 +1,54 @@
+.hero{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 322px;
+  &__box{
+    @include flex-col;
+    max-width:556px;
+    text-align: center;
+  }
+  &__title{
+    @include flex-col;
+    color:$maim-text-color;
+    @include tinos-400;
+    font-size: 50px;
+    line-height: 57px;
+    margin-bottom: 12px;
+  }
+  &__title-text{
+    color:$maim-text-color;
+    @include tinos-400;
+    font-size: 80px;
+    line-height: 92px;
+  }
+  &__subtitle{
+    color: $light-color;
+    @include os-400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 21px;
+    position: relative;
+  }
+  &__subtitle::before,
+  &__subtitle::after{
+    content:'';
+    position: absolute;
+    top: 11px;
+    border-top: 1px solid $grey-color;
+    width: 61px;
+    height: 2px;
+  }
+   &__subtitle::before{
+     left: 125px;
+   }
+    &__subtitle::after{
+      right: 125px;
+    }
+  &__link{
+    width: 137px;
+    margin: 0 auto;
+  }
+}
