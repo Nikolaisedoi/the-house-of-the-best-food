@@ -3,15 +3,32 @@ $btn-color: #ff7400;
 $light-color: #fff;
 $maim-text-color:#D67E35;
 $grey-color:#C4C4C4;
+$bg-color: #E5E5E5;
+$dark-grey-color:#2c2c2c;
+$accent-color:#BC9060;
+$grey-25-color:#656363;
+$black-color:#000;
 //переменные шрифт
 $os: Open Sans;
-
 
 
 //миксины
 @mixin flex-col {
   display: flex;
   flex-direction: column;
+}
+@mixin flex-jcsb{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-jcse{
+  display: flex;
+  justify-content:space-evenly;
+}
+@mixin flex-c-jcsb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @mixin tinos-400{
   font-family: Tinos;
