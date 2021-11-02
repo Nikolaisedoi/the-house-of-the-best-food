@@ -29,6 +29,7 @@ a {
 ul,
 li {
   color: inherit;
+  list-style: none;
 }
 .container {
   max-width: 1160px;
@@ -49,4 +50,16 @@ li {
   cursor: pointer;
   display: inline-block;
   z-index: 44;
+}
+.title{
+  @include tinos-400;
+  font-size: 54px;
+  line-height: 62px;
+  color: $black-color;
+}
+.accent__title{
+  @include tinos-400;
+  font-size: 54px;
+  line-height: 62px;
+  color: $maim-text-color;
 }

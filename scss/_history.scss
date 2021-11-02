@@ -9,15 +9,8 @@
     max-width: 444px;
   }
   &__title{
-    @include tinos-400;
-    font-size: 54px;
-    line-height: 62px;
-    color:$black-color;
     text-align: center;
     margin-bottom: 21px;
-  }
-  &__title span{
-    color:$maim-text-color;
   }
   &__text{
     @include os-400;

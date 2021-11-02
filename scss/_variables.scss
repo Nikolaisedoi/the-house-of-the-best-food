@@ -1,7 +1,7 @@
 // переменные цвет
 $btn-color: #ff7400;
 $light-color: #fff;
-$maim-text-color:#D67E35;
+$maim-text-color:#D67E34;
 $grey-color:#C4C4C4;
 $bg-color: #E5E5E5;
 $dark-grey-color:#2c2c2c;
@@ -33,10 +33,15 @@ $os: Open Sans;
 @mixin tinos-400{
   font-family: Tinos;
   font-style: normal;
-  font-weight: normal;
+  font-weight:400;
 }
 @mixin os-400 {
   font-family: Open Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
+}
+@mixin os-700 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
 }
