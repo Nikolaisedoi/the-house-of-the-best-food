@@ -1,0 +1,20 @@
+.chefs{
+  // background-color: $bg-color;
+  padding: 0 0 43px;
+  &__title{
+    text-align: center;
+    margin-bottom: 107px;
+  }
+  &__slider{
+    display: flex;
+    gap: 30px;
+  }
+  &__slider-item{
+    width: 350px;
+    height: 462px;
+    margin-bottom: 51px;
+  }
+  &__slider-image{
+    display: block;
+  }
+}

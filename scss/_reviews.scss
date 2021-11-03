@@ -1,0 +1,43 @@
+.reviews{
+  background-color: $bg-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 104px 0;
+  &__item{
+    text-align: center;
+  }
+  &__item-text{
+     @include os-400i;
+    font-size: 20px;
+    line-height: 27px;
+    color: $black-color;
+    margin:0 auto 24px;
+    max-width: 920px;
+
+  }
+  &__item-image{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 16px;
+  }
+  &__item-visitor{
+    display: block;
+    @include os-600;
+    font-size: 20px;
+    line-height: 27px;
+    color: $black-color;
+    margin-bottom: 9px;
+  }
+  &__item-name{
+    display: block;
+    @include os-400;
+    font-size: 20px;
+    line-height: 27px;
+    color: $black-color;
+    margin-bottom: 25px;
+  }
+}
