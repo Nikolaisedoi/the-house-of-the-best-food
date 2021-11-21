@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  
+$(document).ready(function () {
+
   //menu__slider
   $('.menu__slider').slick({
     infinite: true,
@@ -7,8 +7,8 @@ $(document).ready(function(){
     slidesToScroll: 1,
     // autoplay: true,
     // speed:200,
-    prevArrow: "<img src='../image/menu/menu-dots.svg' class='slick-prev' alt='left'>",//кастомные стрелки
-    nextArrow: "<img src='../image/menu/menu-dots.svg' class='slick-next' alt='right'>",//кастомные стрелки
+    prevArrow: "<img src='image/menu/menu-dots.svg' class='slick-prev' alt='left'>",//кастомные стрелки
+    nextArrow: "<img src='image/menu/menu-dots.svg' class='slick-next' alt='right'>",//кастомные стрелки
   });
 
   //reviews__slider  
@@ -19,7 +19,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     // autoplay: true,
     // speed:200,
-    arrows:false,                                          
+    arrows: false,
     dotsClass: "my-dots",//(кастомный dots)
   });
 
@@ -28,11 +28,11 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: "<img src='../image/gallery/arrow-gallery.svg' class='gallery-prev' alt='left'>",//кастомные стрелки
-    nextArrow: "<img src='../image/gallery/arrow-gallery.svg' class='gallery-next' alt='right'>",//кастомные стрелки
+    prevArrow: "<img src='image/gallery/arrow-gallery.svg' class='gallery-prev' alt='left'>",//кастомные стрелки
+    nextArrow: "<img src='image/gallery/arrow-gallery.svg' class='gallery-next' alt='right'>",//кастомные стрелки
   });
-  
-  
+
+
   //chefs__slider
   $('.chefs__slider').slick({
     infinite: true,
@@ -40,8 +40,8 @@ $(document).ready(function(){
     slidesToScroll: 3,
     // autoplay: true,
     // speed:200,
-    dots:true,
-    arrows:false,
+    dots: true,
+    arrows: false,
     dotsClass: "my-dots",
   });
 });
