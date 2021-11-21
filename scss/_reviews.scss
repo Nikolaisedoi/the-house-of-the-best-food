@@ -6,6 +6,7 @@
   padding: 104px 0;
   &__item{
     text-align: center;
+    flex-direction: column;
   }
   &__item-text{
      @include os-400i;

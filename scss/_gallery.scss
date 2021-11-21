@@ -1,0 +1,40 @@
+.gallery{
+  padding: 101px 0;
+  &__title{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.gallery__slider{
+  &-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &-image{
+    object-fit: cover;
+    display: block;
+  }
+}
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100px;
+}
+.gallery-prev{
+  left: -100px;
+}
+.gallery-next{
+  right: -95px;
+}
+.big-item{
+  width: 540px;
+  height: 274px;
+}
+.small-item{
+  width: 253px;
+  height: 274px;
+}
