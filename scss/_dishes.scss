@@ -1,21 +1,20 @@
-.dishes{
+.dishes {
   padding: 132px 0 150px;
-  &__title{
+  &__title {
     text-align: center;
     margin-bottom: 139px;
   }
-  &__box{
+  &__box {
     display: grid;
     grid-template-columns: 445px 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-    "d a"
-    "d b"
-    "d c";
+      "d a"
+      "d b"
+      "d c";
     grid-gap: 30px;
-
   }
-  &__image{
+  &__image {
     object-fit: cover;
   }
   &__item {
@@ -23,38 +22,90 @@
     align-items: center;
   }
   &__item-text,
-  &__item-price{
+  &__item-price {
     @include tinos-400;
     font-size: 26px;
     line-height: 30px;
-    color:$black-color;
+    color: $black-color;
   }
-  &__item-text{
+  &__item-text {
     position: relative;
     margin-right: 215px;
   }
-  &__item-text::after{
-    content:'';
+  &__item-text::after {
+    content: "";
     position: absolute;
     top: 15px;
     left: 185px;
     width: 204px;
     border-bottom: 1px dashed $black-color;
   }
-  &__item-image{
+  &__item-image {
     display: block;
     margin-right: 30px;
   }
 }
-.grid-big{
+.grid-big {
   grid-area: d;
 }
-.grid-item1{
+.grid-item1 {
   grid-area: a;
 }
-.grid-item2{
+.grid-item2 {
   grid-area: b;
 }
-.grid-item3{
+.grid-item3 {
   grid-area: c;
+}
+@media (max-width: 1150px) {
+  .dishes {
+    &__item {
+      max-width: 100%;
+    }
+    &__item-text {
+      margin-right: 0;
+    }
+    &__item-text::after {
+      display: none;
+    }
+    &__item-price {
+      margin-left: auto;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .dishes {
+    padding: 70px 0;
+    &__box {
+      display: block;
+      text-align: center;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__image {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 605px) {
+  .dishes {
+    &__title {
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .dishes__item-image {
+    margin-right: 10px;
+  }
+  .dishes__item-text {
+    display: block;
+    font-size: 22px;
+  }
 }

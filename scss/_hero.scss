@@ -1,30 +1,30 @@
-.hero{
+.hero {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   padding-top: 250px;
-  &__box{
+  &__box {
     @include flex-col;
-    max-width:556px;
+    max-width: 556px;
     text-align: center;
   }
-  &__title{
+  &__title {
     @include flex-col;
-    color:$maim-text-color;
+    color: $maim-text-color;
     @include tinos-400;
     font-size: 50px;
     line-height: 57px;
     margin-bottom: 12px;
   }
-  &__title-text{
-    color:$maim-text-color;
+  &__title-text {
+    color: $maim-text-color;
     @include tinos-400;
     font-size: 80px;
     line-height: 92px;
   }
-  &__subtitle{
+  &__subtitle {
     color: $light-color;
     @include os-400;
     font-size: 18px;
@@ -33,22 +33,51 @@
     position: relative;
   }
   &__subtitle::before,
-  &__subtitle::after{
-    content:'';
+  &__subtitle::after {
+    content: "";
     position: absolute;
     top: 11px;
     border-top: 1px solid $grey-color;
     width: 61px;
     height: 2px;
   }
-   &__subtitle::before{
-     left: 125px;
-   }
-    &__subtitle::after{
-      right: 125px;
-    }
-  &__link{
+  &__subtitle::before {
+    left: 125px;
+  }
+  &__subtitle::after {
+    right: 125px;
+  }
+  &__link {
     width: 137px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 925px) {
+  .hero {
+    padding-top: 150px;
+    &__title {
+      font-size: 40px;
+      line-height: 47px;
+    }
+    &__title-text {
+      font-size: 70px;
+      line-height: 82px;
+    }
+  }
+}
+@media (max-width: 605px) {
+  .hero {
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    &__title-text {
+      font-size: 60px;
+      line-height: 72px;
+    }
+    &__subtitle::after,
+    &__subtitle::before {
+      display: none;
+    }
   }
 }

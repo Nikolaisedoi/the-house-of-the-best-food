@@ -11,7 +11,7 @@ body {
   font-family: "OpenSans", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color:#000;
+  color: #000;
 }
 .h1,
 .h2,
@@ -51,23 +51,26 @@ li {
   display: inline-block;
   z-index: 44;
 }
-.title{
+.title {
   @include tinos-400;
   font-size: 54px;
   line-height: 62px;
   color: $black-color;
 }
-.accent__title{
+.accent__title {
   @include tinos-400;
   font-size: 54px;
   line-height: 62px;
   color: $maim-text-color;
 }
-.visibility__hidden{
+.visibility__hidden {
   visibility: hidden;
 }
-.img{
+.img {
   display: block;
   width: 100%;
   height: auto;
+}
+.none {
+  display: none;
 }
