@@ -9,6 +9,31 @@ $(document).ready(function () {
     // speed:200,
     prevArrow: "<img src='image/menu/menu-dots.svg' class='slick-prev' alt='left'>",//кастомные стрелки
     nextArrow: "<img src='image/menu/menu-dots.svg' class='slick-next' alt='right'>",//кастомные стрелки
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+          dotsClass: "my-dots",//(кастомный dots)
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+          dotsClass: "my-dots",//(кастомный dots)
+          // centerMode: true
+        }
+      }
+    ]
   });
 
   //reviews__slider  
@@ -43,5 +68,19 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
     dotsClass: "my-dots",
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 });

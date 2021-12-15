@@ -1,23 +1,22 @@
-.reviews{
+.reviews {
   background-color: $bg-color;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 104px 0;
-  &__item{
+  &__item {
     text-align: center;
     flex-direction: column;
   }
-  &__item-text{
-     @include os-400i;
+  &__item-text {
+    @include os-400i;
     font-size: 20px;
     line-height: 27px;
     color: $black-color;
-    margin:0 auto 24px;
+    margin: 0 auto 24px;
     max-width: 920px;
-
   }
-  &__item-image{
+  &__item-image {
     display: block;
     width: 100px;
     height: 100px;
@@ -25,7 +24,7 @@
     object-fit: cover;
     margin: 0 auto 16px;
   }
-  &__item-visitor{
+  &__item-visitor {
     display: block;
     @include os-600;
     font-size: 20px;
@@ -33,12 +32,17 @@
     color: $black-color;
     margin-bottom: 9px;
   }
-  &__item-name{
+  &__item-name {
     display: block;
     @include os-400;
     font-size: 20px;
     line-height: 27px;
     color: $black-color;
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 650px) {
+  .reviews__item-text {
+    font-size: 16px;
   }
 }

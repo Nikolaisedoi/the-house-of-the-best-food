@@ -47,8 +47,11 @@
   &-image {
     max-width: 225px;
     max-height: 225px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     margin-bottom: 22px;
+    object-fit: cover;
   }
   &-box {
     position: relative;
@@ -61,8 +64,8 @@
     position: absolute;
     bottom: -2%;
     right: -5%;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 40%;
+    max-height: 40%;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -72,8 +75,8 @@
   &-box::after {
     content: "420";
     position: absolute;
-    bottom: 33px;
-    right: 25px;
+    bottom: 10%;
+    right: 10%;
     font-family: Cookie;
     font-style: normal;
     font-weight: normal;
@@ -100,7 +103,7 @@
   &-button {
     background-color: $maim-text-color;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    padding: 14px 68px;
+    padding: 14px;
     @include os-700;
     font-size: 16px;
     line-height: 22px;
@@ -122,4 +125,96 @@
 }
 .slick-next {
   right: -5%;
+}
+@media (max-width: 950px) {
+  .slider {
+    &__item {
+      padding: 40px 45px 30px;
+    }
+    &__item-title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__item-text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__item-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+    &__item-box::after {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .slider {
+    &__item {
+      padding: 30px 20px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .slider {
+    &__item {
+      padding: 30px 20px;
+    }
+    &__item-recommended::before {
+      width: 90px;
+      height: 10px;
+      font-size: 10px;
+      line-height: 13px;
+      padding: 7px;
+    }
+    &__item-title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__item-text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__item-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+    &__item-box::after {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .section-menu {
+    padding: 20px 0 80px;
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .slider {
+    &__item {
+      padding: 30px 10px 20px;
+    }
+    &__item-title {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .slider {
+    &__item {
+      padding: 30px;
+    }
+    &__item-box::before {
+      bottom: 5%;
+      right: 5%;
+      max-width: 30%;
+      max-height: 35%;
+    }
+    &__item-box::after {
+      bottom: 17%;
+      right: 16%;
+    }
+  }
 }
