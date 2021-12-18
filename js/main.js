@@ -51,8 +51,8 @@ $(document).ready(function () {
   //gallery__slider
   $('.gallery__slider').slick({
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     prevArrow: "<img src='image/gallery/arrow-gallery.svg' class='gallery-prev' alt='left'>",//кастомные стрелки
     nextArrow: "<img src='image/gallery/arrow-gallery.svg' class='gallery-next' alt='right'>",//кастомные стрелки
   });
@@ -70,13 +70,13 @@ $(document).ready(function () {
     dotsClass: "my-dots",
     responsive: [
       {
-        breakpoint: 1101,
+        breakpoint: 750,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
         }

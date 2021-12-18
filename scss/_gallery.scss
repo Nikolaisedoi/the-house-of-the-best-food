@@ -1,18 +1,19 @@
-.gallery{
+.gallery {
   padding: 101px 0;
-  &__title{
+  &__title {
     text-align: center;
     margin-bottom: 60px;
   }
 }
-.gallery__slider{
-  &-item{
+.gallery__slider {
+  width: 100%;
+  &-item {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
   }
-  &-image{
+  &-image {
     object-fit: cover;
     display: block;
   }
@@ -24,17 +25,24 @@
   width: 30px;
   height: 100px;
 }
-.gallery-prev{
+.gallery-prev {
   left: -100px;
 }
-.gallery-next{
+.gallery-next {
   right: -95px;
 }
-.big-item{
+.big-item {
   width: 540px;
   height: 274px;
+  grid-column: 2 span;
 }
-.small-item{
+.small-item {
   width: 253px;
   height: 274px;
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-rows: repeat(2, 274px);
+  grid-gap: 30px;
 }
